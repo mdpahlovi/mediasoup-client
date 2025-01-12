@@ -5,17 +5,13 @@ import "./globals.css";
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mediasoup Learning Demo",
+    title: "Mediasoup Learning Demo",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body className={poppins.className}>{children}</body>
-    </html>
-  );
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+    return (
+        <html lang="en">
+            <body className={poppins.className}>{children}</body>
+        </html>
+    );
 }
